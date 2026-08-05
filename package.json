@@ -58,6 +58,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pacrypto55/orderly-multiscreen"
+    "url": "git+https://github.com/pacrypto55/orderly-multiscreen.git"
   }
 }
