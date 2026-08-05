@@ -1,5 +1,5 @@
 {
-  "name": "@orderly-plugins/multiscreen",
+  "name": "@pacrypto55/multiscreen",
   "version": "1.0.0",
   "description": "Multi-screen trading view for Orderly DEXes. Displays two side-by-side TradingPage charts with independent symbol selection and persistent state.",
   "main": "dist/index.js",
@@ -16,6 +16,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsup && cp src/styles.css dist/styles.css",
     "dev": "tsup --watch",

@@ -1,6 +1,7 @@
 {
   "pluginId": "multiscreen",
-  "npmName": "@orderly-plugins/multiscreen",
+  "npmName": "@pacrypto55/multiscreen",
   "repoUrl": "https://github.com/pacrypto55/orderly-multiscreen",
-  "tags": ["UI", "Trading", "Chart"]
+  "tags": ["UI", "Trading", "Chart"],
+  "usagePrompt": "Multi-screen adds a dual-chart trading view to an Orderly DEX: two independent TradingPage panels side by side, each with its own symbol selector and localStorage-persisted symbol (so left/right selections survive a page reload). Layout stacks vertically below 1024px viewport width.\n\nInstall:\n1. `npm install @pacrypto55/multiscreen` (peer deps: react, react-dom, react-router-dom, and @orderly.network/hooks, types, trading, ui-scaffold, plugin-core ^3.1.x).\n2. Register the plugin so the \"Multi-screen\" entry auto-appears in your main nav:\n   `<OrderlyAppProvider plugins={[registerMultiscreenPlugin()]} ...>`\n3. Mount the route yourself (no page-injection API exists in the SDK yet, so this step is manual):\n   ```tsx\n   import { MultiScreenLayout, MultiScreen } from '@pacrypto55/multiscreen';\n   import '@pacrypto55/multiscreen/styles.css';\n\n   <Route path=\"multiscreen\" element={<MultiScreenLayout mainNavProps={...} footerProps={...} bottomNavProps={...} onRouteChange={...} />}>\n     <Route index element={<MultiScreen tradingViewConfig={...} sharePnLConfig={...} />} />\n   </Route>\n   ```\n\nKnown limitation: hiding the order book / markets sidebar inside each panel relies on CSS targeting Orderly UI's internal class names (documented in src/styles.css), since the SDK has no public prop for this yet. Re-verify those selectors if you're on an SDK version outside the pinned ^3.1.x range."
 }
