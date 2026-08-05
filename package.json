@@ -1,0 +1,60 @@
+{
+  "name": "@orderly-plugins/multiscreen",
+  "version": "1.0.0",
+  "description": "Multi-screen trading view for Orderly DEXes. Displays two side-by-side TradingPage charts with independent symbol selection and persistent state.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup && cp src/styles.css dist/styles.css",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "@orderly.network/hooks": "^3.1.0",
+    "@orderly.network/types": "^3.1.0",
+    "@orderly.network/trading": "^3.1.0",
+    "@orderly.network/ui-scaffold": "^3.1.0",
+    "@orderly.network/plugin-core": "^3.1.0",
+    "react-router-dom": ">=6.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@orderly.network/hooks": "^3.1.3",
+    "@orderly.network/types": "^3.1.3",
+    "@orderly.network/trading": "^3.1.3",
+    "@orderly.network/ui-scaffold": "^3.1.3",
+    "@orderly.network/plugin-core": "^3.1.3",
+    "react-router-dom": "^6.28.0",
+    "typescript": "^5.5.0",
+    "tsup": "^8.3.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0"
+  },
+  "keywords": [
+    "orderly",
+    "multiscreen",
+    "trading",
+    "dex",
+    "tradingview"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pacrypto55/orderly-multiscreen"
+  }
+}
