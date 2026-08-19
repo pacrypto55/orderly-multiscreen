@@ -2,11 +2,11 @@
 
 Multi-screen trading view for Orderly Network DEXes. Adds a "Multi-screen" page with two independent, side-by-side chart panels — each with its own symbol selector and its own persisted symbol, so left/right selections survive a page reload.
 
-![Two independent chart panels, BTC on the left and ETH on the right, each with its own symbol, timeframe and candles](docs/screenshot-desktop.png)
+![Two independent chart panels, BTC on the left and ETH on the right, each with its own symbol, timeframe and candles](https://raw.githubusercontent.com/pacrypto55/orderly-multiscreen/main/docs/screenshot-desktop.png)
 
 Below a 1024px viewport the two panels stack vertically instead of sitting side by side:
 
-![The same two panels stacked vertically on a narrow/mobile viewport](docs/screenshot-mobile.png)
+![The same two panels stacked vertically on a narrow/mobile viewport](https://raw.githubusercontent.com/pacrypto55/orderly-multiscreen/main/docs/screenshot-mobile.png)
 
 ## Install
 
